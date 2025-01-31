@@ -3,10 +3,12 @@
     padding:0;
 }
 body{
-
-    background-image:url(img/bg2_arriba.jpg) ;
-    background-position:center;
-    background-attachment: fixed;
+        background-image: url("img/bg2_arriba.jpg"); /* URL de la imagen */
+        background-size: cover; 
+        background-position: center center; /* Centrado */
+        background-attachment: fixed; /* Fijo en la pantalla */
+        background-repeat: no-repeat; /* Evita que se repita */
+        height: 100vh; /* Asegura que el body tenga altura completa */
 }
 
 h1 {
