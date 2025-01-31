@@ -115,7 +115,7 @@ a:hover{
 }
 
 .contenedor a{
-    width: 200px;
+    width: 70%;
     height: 400px;
     overflow: hidden;
     margin: auto;
@@ -140,7 +140,25 @@ span {
      color: rgb(221, 190, 11);
     font-size: 20px;
 }
-@media (max-width: 600px) { 
+@media (max-width: 1000px) { 
+    .contenedor{
+    grid-template-columns: repeat(2,1fr);
+    gap: 0px;
+    padding: 0px;
+    padding-top: 60px;
+
+}
+.contenedor a{
+    width: 35vw;
+    height: 90%;
+    }
+.cont_prod{
+    width: 100%;
+    height: 100%;
+    }
+}
+
+@media (max-width: 500px) { 
     .contenedor{
     grid-template-columns: repeat(1,1fr);
     gap: 0px;
@@ -148,12 +166,12 @@ span {
     padding-top: 60px;
 
 }
-    .contenedor a{
-        width: 70vw;
-        height: 90%;
+.contenedor a{
+    width: 55vw;
+    height: 90%;
     }
-    .cont_prod{
-        width: 100%;
-        height: 100%;
+.cont_prod{
+    width: 100%;
+    height: 100%;
     }
 }
