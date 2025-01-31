@@ -10,7 +10,18 @@ body{
         background-repeat: no-repeat; /* Evita que se repita */
         height: 100vh; /* Asegura que el body tenga altura completa */
 }
-
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-image: url("tu-imagen.jpg");
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+}
 h1 {
     color: #fff;
     font-family: "Lexend Giga", serif;
