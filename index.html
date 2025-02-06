@@ -25,9 +25,20 @@
             <a href="#liquidos"><i class="fa-solid fa-droplet"></i></i>liquidos</a>
             <a href="#pedidos"><i class="fa-solid fa-clipboard-user"></i>a pedido</a>
         </nav>
+
+
+
         <nav class="nav_celular">
-            <a href="#inicio"><i class="fa-solid fa-bars"></i></a>
+            <a href="javascript:void(0);" onclick="toggleNav()">
+                <i class="fa-solid fa-bars"></i>
+            </a>
         </nav>
+
+
+
+        <!-- <nav class="nav_celular">
+            <a href="#inicio"><i class="fa-solid fa-bars"></i></a>
+        </nav> -->
         <main id="inicio">
             <div class="titulos">
                 <h2 id="destacados">destacados</h2>
@@ -137,7 +148,7 @@
                             <img src="img/vapers/koko.png">   
                         </div>  
                         <h3>
-                            bateria recargable <br>escencia recargable <br><span>$29.500</span><br><span>no stock, consultar encargo</span>
+                            bateria recargable <br>sal recargable <br><span>$32.000</span>
                         </h3>
                         <i class="fa-brands fa-whatsapp"></i>
                     </article>
@@ -299,5 +310,13 @@
         <a target="_blank" href="https://www.instagram.com/saborcloud/"><i class="fa-brands fa-instagram"></i>seguinos en instagram</a>
         <a target="_blank" href="#"><i class="fa-brands fa-whatsapp"></i>grupo de whatsapp</a>
     </footer>
+
+    <script>
+        function toggleNav() {
+            var nav = document.querySelector('.nav_pc');
+            nav.style.transform = (nav.style.transform === 'translateX(0px)') ? 'translateX(-100%)' : 'translateX(0px)';
+        }
+    </script>
+    
 </body>
 </html>
